@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script refer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link
+href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css"
+rel="stylesheet"
+/>
+<!-- MDB -->
+<script
+  defer type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.js"
+> </script>
+</head>
+<body>
+
+    <div class="container col-lg-7 col-md-7 col-11 shadow-sm">
+        <h1 class="text text-center text-decoration-underline text-success my-5">SQI level 3 students and informations</h1>
+        
+        <!-- <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    This is a longer card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.
+                  </p>
+                  <p>hello</p>
+                  <p>hi</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    This is a longer card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.
+                  </p>
+                  <p>hello</p>
+                  <p>hi</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                  <p>hello</p>
+                  <p>hi</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    This is a longer card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.
+                  </p>
+                  <p>hello</p>
+                  <p>hi</p>
+                </div>
+              </div>
+            </div>
+          </div> -->
+          <div id="disp"></div>
+    </div>
+
+
+
+    <script>
+        class Students{
+            constructor(named, matric, department, level){
+                this.named = named
+                this.matric = matric
+                this.department = department
+                this.level = level
+            }
+
+            details(){
+                disp.innerHTML+=`
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">${this.named}</h5>
+                                <p class="card-text">
+                                    ${this.matric}
+                                </p>
+                                <p>${this.department}</p>
+                                <p>${this.level}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                `
+                
+                    
+            }
+            details2(){
+                disp.innerHTML+=`
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">${this.named}</h5>
+                                <p class="card-text">
+                                    ${this.matric}
+                                </p>
+                                <p>${this.department}</p>
+                                <p>${this.level}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                `
+                
+                    
+            }
+            details3(){
+                disp.innerHTML+=`
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">${this.named}</h5>
+                                <p class="card-text">
+                                    ${this.matric}
+                                </p>
+                                <p>${this.department}</p>
+                                <p>${this.level}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                `
+                
+                    
+            }
+            details4(){
+                disp.innerHTML+=`
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">${this.named}</h5>
+                                <p class="card-text">
+                                    ${this.matric}
+                                </p>
+                                <p>${this.department}</p>
+                                <p>${this.level}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                `
+                
+                    
+            }
+            details5(){
+                disp.innerHTML+=`
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">${this.named}</h5>
+                                <p class="card-text">
+                                    ${this.matric}
+                                </p>
+                                <p>${this.department}</p>
+                                <p>${this.level}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                `
+                
+                    
+            }
+            details6(){
+                disp.innerHTML+=`
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">${this.named}</h5>
+                                <p class="card-text">
+                                    ${this.matric}
+                                </p>
+                                <p>${this.department}</p>
+                                <p>${this.level}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                `
+                
+                    
+            }
+            details7(){
+                disp.innerHTML+=`
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">${this.named}</h5>
+                                <p class="card-text">
+                                    ${this.matric}
+                                </p>
+                                <p>${this.department}</p>
+                                <p>${this.level}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                `
+                
+                    
+            }
+            details8(){
+                disp.innerHTML+=`
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">${this.named}</h5>
+                                <p class="card-text">
+                                    ${this.matric}
+                                </p>
+                                <p>${this.department}</p>
+                                <p>${this.level}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                `
+                
+                    
+            }
+            details9(){
+                disp.innerHTML+=`
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">${this.named}</h5>
+                                <p class="card-text">
+                                    ${this.matric}
+                                </p>
+                                <p>${this.department}</p>
+                                <p>${this.level}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                `
+                
+                    
+            }
+            details10(){
+                disp.innerHTML+=`
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">${this.named}</h5>
+                                <p class="card-text">
+                                    ${this.matric}
+                                </p>
+                                <p>${this.department}</p>
+                                <p>${this.level}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                `
+                
+                    
+            }
+        }
+        let Student1 = new Students("Afolabi Abdulkareem", 210840, "Software Engineering", "Level 3")
+        let Student2 = new Students("Jolariike Sofiyat", 210040, "Hardware Engineering", "Level 2")
+        let Student3 = new Students("Adebayo Ridwan", 210440, "UI/UX", "Level 3")
+        let Student4 = new Students("Adedeji Micheal", 200840, "Software Engineering", "Level 3")
+        let Student5 = new Students("Ajao Oluwatosin", 210900, "Software Engineering", "Level 3")
+        let Student6 = new Students("Adekunle Tola", 210830, "Accounting", "Level 4")
+        let Student7 = new Students("Adesoji Fathia", 210240, "Hardware Engineering", "Level 1")
+        let Student8 = new Students("Ajayi Olakunle", 210002, "Graphics Design", "Level 2")
+        let Student9 = new Students("Sowade Ayodeji", 210852, "Software Engineering", "Level 3")
+        let Student10 = new Students("Ogunsola Nurudeen", 210890, "Hardware Engineering", "Level 3")
+
+        console.log(Student1);
+
+        Student1.details()
+        Student2.details2()
+        Student3.details3()
+        Student4.details4()
+        Student5.details5()
+        Student6.details6()
+        Student7.details7()
+        Student8.details8()
+        Student9.details9()
+        Student10.details10()
+    </script>
+</body>
+</html>
